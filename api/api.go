@@ -1,7 +1,7 @@
 package goofys
 
 import (
-	. "github.com/kahing/goofys/internal"
+	. "github.com/zhezhel/goofys/internal"
 
 	"context"
 	"fmt"
@@ -48,6 +48,7 @@ type Config struct {
 	// Tuning
 	Cheap        bool
 	ExplicitDir  bool
+	MaxKeys      int64
 	StatCacheTTL time.Duration
 	TypeCacheTTL time.Duration
 
