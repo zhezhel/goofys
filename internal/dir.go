@@ -101,9 +101,9 @@ func (inode *Inode) OpenDir() (dh *DirHandle) {
 		} else {
 			parent.dir.seqOpenDirScore = 0
 			parent.dir.lastOpenDirIdx = parent.findChildIdxUnlocked(*inode.Name)
-			if parent.dir.lastOpenDirIdx == -1 {
-				panic(fmt.Sprintf("%v is not under %v", *inode.Name, *parent.FullName()))
-			}
+			// if parent.dir.lastOpenDirIdx == -1 {
+			// 	panic(fmt.Sprintf("%v is not under %v", *inode.Name, *parent.FullName()))
+			// }
 		}
 
 		parent.dir.lastOpenDir = inode.Name

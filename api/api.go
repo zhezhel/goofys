@@ -1,7 +1,7 @@
 package goofys
 
 import (
-	. "github.com/zhezhel/goofys/internal"
+	. "github.com/kahing/goofys/internal"
 
 	"context"
 	"fmt"
